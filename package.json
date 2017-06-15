@@ -1,0 +1,17 @@
+{
+  "name": "gunyan",
+  "version": "0.9.0",
+  "private": true,
+  "description": "Bunyan logging for Express and GCP/Stackdriver",
+  "main": "logger.js",
+  "scripts": {
+    "test": "echo \"Run tests from /service-dependencies \" && exit 1"
+  },
+  "author": "Jon Linklater-Johnson <jonl@brandwatch.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bunyan": "^1.8.5",
+    "on-headers": "^1.0.1",
+    "uuid": "^2.0.3"
+  }
+}
