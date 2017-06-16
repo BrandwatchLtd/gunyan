@@ -1,10 +1,12 @@
+const assert = require('assert');
 const bunyan = require('bunyan');
 const StandardOut = require('./standard-out');
+
 
 function loggerFactory({
   logLevel=process.env.LOG_LEVEL || 'info',
   logName=process.env.LOG_NAME,
-  logVersion=process.env.VERSION
+  logVersion=process.env.VERSION,
   production=process.env.NODE_ENV === 'production'
 } = {}) {
 
